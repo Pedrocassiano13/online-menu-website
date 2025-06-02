@@ -1,0 +1,50 @@
+{
+  "name": "online-menu-website",
+  "version": "1.0.0",
+  "description": "An online menu website to showcase food items and their details.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run optimize:images && npm run build",
+    "deploy": "gh-pages -d build",
+    "optimize:images": "node scripts/optimize-images.js",
+    "postinstall": "node scripts/optimize-images.js"
+  },
+  "keywords": [
+    "menu",
+    "food",
+    "restaurant",
+    "online"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-lazy-load-image-component": "^1.5.6",
+    "react-router-dom": "^6.14.2",
+    "react-scripts": "^5.0.1",
+    "sharp": "^0.32.6"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-plugin-react": "^7.27.1",
+    "gh-pages": "^5.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
